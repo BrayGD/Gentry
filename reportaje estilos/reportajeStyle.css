@@ -1,0 +1,588 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #020202;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(151, 147, 147, 0.2); /* Fondo transparente */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px); 
+    position: sticky;
+    top: 0; 
+    z-index: 1; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilo del logo */
+.logo {
+    width: 100px; /* Tamaño del logo */
+}
+
+/* Estilos para el botón de volver */
+.back-button {
+    background-color: #ffffff; /* Color dorado */
+    color: #333; /* Texto oscuro */
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio entre botones */
+    position: absolute; /* Coloca el botón en posición absoluta */
+    top: 10px; /* Alinea en la parte superior */
+    right: 10px; /* Alinea a la derecha */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Sombra dorada */
+}
+
+/* Estilo hover para el botón de volver */
+.back-button:hover {
+    background-color: #ffd700; /* Color dorado más claro en hover */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Sombra dorada más intensa en hover */
+}
+
+
+.back-button a {
+    text-decoration: none; 
+}
+
+.back-button:hover {
+    background-color: gold; 
+    color: white; 
+}
+
+
+
+.report{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.text{
+    padding: 100px;
+    margin:10px;
+}
+
+.text h1{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+
+.text h2{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+
+.text p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+    text-align: justify;
+    line-height: 19px;
+    font-family: 'GFS Didot', serif;
+
+}
+
+.text p .negritas{
+    font-weight: bold;
+}
+
+.text p .cita{
+    font-style: italic;
+    text-align: justify;
+}
+
+.media-img img{
+    width: 700px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves de escala y sombra */
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7); /* Sombra dorada inicial */
+    margin-bottom: 20px ;
+}
+
+.media-img img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% */
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.7); /* Sombra dorada cuando el mouse pasa por encima */
+}
+
+.media-img button {
+    background-color: #333333;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+    margin-top: 20px;
+}
+
+.media-img button:hover {
+    background-color: gold; 
+    color: #000; 
+    transform: scale(1.05); 
+    animation: pulse 2s infinite;  
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+audio{
+    transition: transform 0.3s ease;
+}
+
+audio:hover{
+transform: scale(1.1);
+}
+
+audio::-webkit-media-controls-panel{
+
+        background-color: gold;
+}
+
+
+audio::-webkit-media-controls-play-button{
+    background-color: rgba(187, 168, 59, 0.753);
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display{
+    color: #333;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: #333;
+}
+audio::-webkit-media-controls-timeline{
+    border-radius: 40px;
+    background-color: rgba(187, 168, 59, 0.753);
+}
+audio::-webkit-media-controls-volume-slider{
+    background-color: rgba(187, 168, 59, 0.753);
+    border-radius: 50px;
+    margin-left: 30px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: rgba(187, 168, 59, 0.753);
+    border-radius: 50%;
+}
+
+.media-vid button {
+    background-color: #333333;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+    margin-top: 20px;
+}
+
+.media-vid button:hover {
+    background-color: gold; 
+    color: #000; 
+    transform: scale(1.05); 
+    animation: push 2s infinite; 
+}
+
+@keyframes push {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.media-img img,
+.media-vid video {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+
+.back-button {
+    top: 10px; 
+    right: 10px; 
+}
+
+
+
+#media1{
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+
+
+#media2{
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+}
+
+
+#media3{
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+#media3 video{
+    width: 350px;
+    height: auto;
+}
+
+#media4{
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+}
+
+#media4 img{
+    width: 300px;
+    height: auto;
+    
+}
+
+#media5{
+
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+ 
+
+
+#media6{
+
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+} 
+
+
+#media7{
+    border-radius: 15px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float:right
+}
+
+#media7 img{
+    height: auto;
+    width: 300px;
+}
+
+#media8{
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+#media8 video{
+    width: 350px;
+    height: auto;
+}
+
+
+#media9{
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+#media9 video{
+    height: auto;
+    width: 350px;
+}
+
+#media10{
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#media10 img{
+    height: auto;
+    width: 300px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Centrar los iconos horizontalmente */
+    margin-top: 40px; /* Agregar margen superior */
+}
+
+.social-buttons a {
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: white; /* Color inicial de los íconos */
+
+    margin: 0 10px; /* Separación horizontal entre los iconos */
+    font-size: 32px; /* Tamaño de los iconos */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para los iconos específicos */
+#facebookButton ion-icon {
+    color: white; /* Color inicial de Facebook */
+}
+
+#instagramButton ion-icon {
+    color: white; /* Color inicial de Instagram */
+}
+
+#tiktokButton ion-icon {
+    color: white; /* Color inicial de TikTok */
+}
+
+/* Estilos para el efecto hover */
+#facebookButton:hover ion-icon {
+    color: blue; /* Cambiar a azul al pasar el mouse sobre Facebook */
+}
+
+#instagramButton:hover ion-icon {
+    color: rgb(255, 106, 131); /* Cambiar a rosa al pasar el mouse sobre Instagram */
+}
+
+#tiktokButton:hover ion-icon {
+    color: magenta; /* Cambiar a magenta al pasar el mouse sobre TikTok */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+
+    }
+
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .report {
+    margin: 11px;    
+}
+
+    .report .text {
+        padding: 0;
+    }
+
+    .text h1{
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 19px;
+        font-weight: bold;
+    
+    }
+
+    .text h2{
+        text-align: left;
+        margin-top: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 10px;
+    
+    }
+
+    
+
+    #media1{
+        border-radius: 10px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #media1 img{
+        width: 300px;
+        height: auto;
+    }
+    #media2{
+        border-radius: 10px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    #media3{
+        border-radius: 10px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #media4{
+        border-radius: 15px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #media4 img{
+        height: auto;
+        width: 300px;
+    }
+    
+    #media5{
+    
+        border-radius: 10px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+     
+    
+    
+    #media6{
+    
+        border-radius: 10px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } 
+    
+    #media7{
+        border-radius: 15px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #media7 img{
+        height: auto;
+        width: 300px;
+    }
+    
+
+
+
+    #media9 img{
+        width: 200px;
+        height: auto;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 480px) {
+    .media-item {
+        flex-basis: 100%;
+    }
+}

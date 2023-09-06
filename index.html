@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/Style/style-nav/style.css">
+    <link rel="stylesheet" href="./assets/Style/style-nav/navStyle.css">
+    <link rel="stylesheet" href="./assets/Style/style-nav/nav-style-list.css">
+    <link rel="stylesheet" href="./assets/Style/style-nav/style-Modo-Obscuro.css">
+    <link rel="stylesheet" href="./assets/Style/homePage-Style/homePage.css">
+    <link rel="stylesheet" href="./assets/Style/homePage-Style/videoHomePage.css">
+    <link rel="stylesheet" href="./assets/Style/homePage-Style/textoEncabezado.css">
+    <link rel="stylesheet" href="./assets/Style/styleReportaje/styleTexto.css">
+    <link rel="stylesheet" href="./assets/Style/VideReportajeStyle/videoReportaje.css">
+    <link rel="stylesheet" href="./assets/Style/VideReportajeStyle/imagen-portada.css">
+    <link rel="stylesheet" href="./assets/Style/VideReportajeStyle/textoPortada.css">
+    <link rel="stylesheet" href="./assets/Style/estilosGaleria/galeriaStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>		
+	<link rel="stylesheet"  href="./assets/Style/mapa estilos/mapaStyle.css"/>	
+    <link rel="stylesheet" href="./assets/Style/Spotify estilos/spotifyStyle.css">
+    <link rel="stylesheet" href="./assets/Style/footer estilos/footerStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+One&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&family=Mochiy+Pop+One&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Handjet&family=Mochiy+Pop+One&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Gentry</title>
+    <link rel="icon"  href="./assets/logos/logo gentry/favicon.svg">
+</head>
+<body>
+
+
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="contenedor_nav">
+        <div>
+            <div class="contenedor_logo">
+                <img src="./assets/logos/logo gentry/logo.svg" id="logo" alt="imagen logo">
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#seccionHomePage">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span>Inicio</span>
+                </a>
+            </li>
+                <li><a href="#seccionReportaje">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Reportaje</span>
+                </a>
+            </li>
+                <li><a href="#seccionVideoReportaje">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                    <span>Video Reportaje</span>
+                </a>
+            </li>
+                <li><a href="#seccionGaleria">
+                    <ion-icon name="images-outline"></ion-icon>
+                    <span>Galería</span>
+                </a>
+            </li>
+                <li><a href="#seccionMapa">
+                    <ion-icon name="map-outline"></ion-icon>
+                    <span>Mapa</span>
+                </a>
+            </li>
+                <li><a href="#seccionPodcast">
+                    <ion-icon name="mic-outline"></ion-icon>
+                    <Span>Crónicas</Span>
+                </a>
+            </li>
+            </ul>
+        </nav>
+        <div>
+                <div class="linea"></div>
+            <div class="modo-obscuro"> 
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="contenedor-homePage" id="seccionHomePage">
+        
+        <div class="contenedor-encabezado">
+            <div class="texto_encabezado">
+                <h1>GENTRIFICACIÓN</h1>
+                <p>El secreto a voces de la ciudad<span>&#160</span></p>
+            </div>   
+        </div>
+        <video autoplay loop muted src="./assets/videos/videos reportaje/videoHomePage.mp4"></video>
+    </section>
+    <section class="contenedor-reportaje" id="seccionReportaje">
+        <div class="card">
+            <img src="./assets/imagenes/imagenes reportaje/Reportaje definición.jpg" alt="Imagen de la noticia">
+            <div class="card-content">
+                <div data-aos="flip-down">  
+                <h2>Metamorfosis urbana: La Gentrificación en la Ciudad de los Palacios</h2>
+            </div>
+               
+                <hr> <!-- Línea divisoria -->
+                <p data-aos="zoom-in-up">Descubre cómo la gentrificación ha transformado la Ciudad de México, desde barrios coloniales hasta nuevas zonas de moda. Este reportaje revela el choque entre tradición y cambio, dando voz a los afectados por el desplazamiento y la preservación del patrimonio cultural. Acompáñanos en un viaje por una metrópolis en constante evolución.</p>
+                <a 
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                href="./reportaje.html" class="read-more-button">Leer Reportaje Completo</a>
+            </div>
+        </div>
+        
+    </section>
+
+        <section class="contenedor-videoReportaje" id="seccionVideoReportaje">
+            <div class="videoReportaje">
+                <div class="contenedor-elementos">
+                    <div data-aos="flip-down"> 
+                    <h6 class="titulo">Video Reportaje</h6>
+                </div>
+                    <p data-aos="zoom-in-up" class="descripcion">El fenomeno de la Gentrificación sin duda ha tomado relevancía en la CDMX. La presencia de extranjeros y alza de precios en renta, ha obligado a los residentes de la CIudad y de sus periferias la capital.</p>
+                    <a data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                     href="https://youtu.be/KihM8H_5cRA" target="_blank"><button type="button" class="boton">
+                        <ion-icon name="play-outline"></ion-icon>Trailer</button></a>
+                       
+                   <a 
+                   data-aos="fade-down"
+                   data-aos-easing="linear"
+                   data-aos-duration="1500"
+                   href="https://youtu.be/bjz3rRUKr5I" id="trailer-button" target="_blank"><button type="button" class="boton" target="_blank"><ion-icon name="add-circle-outline">
+                        </ion-icon>Ver más
+                    </button></a>
+                </div> 
+            </div>
+        </section>
+        <section class="galeria" id="seccionGaleria">
+
+            <div class="ful-img" id="fulImgBox">
+                <img src="imgs/1.jpg" id="fulImg" alt="">
+                <span onclick="closeImg()">X</span>
+            </div>
+
+                <h2 data-aos="flip-down">Galeria de Fotos</h2>
+                <div class="img-gallery">
+                    <img data-aos="fade-right" src="./assets/imagenes/imagenes galeria/Gentrificación 1.JPG" onclick="openFulImg(this.src)" alt="imagen 1">
+                    <img  data-aos="fade-left" src="./assets/imagenes/imagenes galeria/Gentrificació 2.JPG" onclick="openFulImg(this.src)" alt="imagen 2">
+                    <img  data-aos="fade-up-right" src="./assets/imagenes/imagenes galeria/Gentrificación 3.JPG" onclick="openFulImg(this.src)" alt="imagen 3">
+                    <img data-aos="fade-left" src="./assets/imagenes/imagenes galeria/Gentrificación 8.JPG" onclick="openFulImg(this.src)" alt="imagen 4">
+                    <img  data-aos="fade-up-right"src="./assets/imagenes/imagenes galeria/Gentrificación 5.JPG" onclick="openFulImg(this.src)" alt="imagen 5">
+                    <img data-aos="fade-up-left" src="./assets/imagenes/imagenes galeria/Gentrificación 6.JPG" onclick="openFulImg(this.src)" alt="imagen 6">
+                    <img data-aos="fade-down-right" src="./assets/imagenes/imagenes galeria/Gentrificación 7.JPG" onclick="openFulImg(this.src)" alt="imagen 7">
+                    <img data-aos="fade-right" src="./assets/imagenes/imagenes galeria/Gentrificación 9.JPG" onclick="openFulImg(this.src)" alt="imagen 8">
+                </div>
+                
+                <div class="boton-container">
+                    <a href="https://instagram.com/gentry.cdmx?igshid=MzRlODBiNWFlZA==" target="_blank">
+                        <button 
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                         class="boton-galería">
+                            ver más <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                        </button>
+                    </a>
+                </div>
+
+        </section>
+
+        <section class="contenedor-mapa" id="seccionMapa">
+            <div class="contenedor-lista">
+                    <h2 data-aos="flip-down">¿Cuales son los lugares más gentrificados de la Ciudad de México?</h2>
+            <select 
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" name="select-location" id="select-location">
+                <option value="-1">Lugares gentrificados:</option>
+                <option value="19.3467,-99.16174">Coyoacan</option>
+                <option value="19.43411,-99.20024">Miguel Hidalgo</option>	
+                <option value="19.3727,-99.1564">Benito Juarez</option>
+                <option value="19.44506,-99.14612">Cuahutemoc</option>
+            </select>
+            </div>	
+	<div id="map" data-aos="zoom-out-up"></div>
+
+        <a  
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        href="https://indd.adobe.com/view/5a6e1232-62ed-448f-83a3-39fd67dc10fa"><button class="boton-mapa">ver más <ion-icon name="arrow-forward-circle-outline"></ion-icon></button></a>
+        </section>
+
+        <section class="contenedor-spotofy" id="seccionPodcast">      
+                <h2>Crónicas</h2>
+            <div class="card_container">
+                <div class="card_work">
+                    <div class="face front">
+                        <img src="./assets/imagenes/imagenes cards/Bad Bunny.jpg" alt="Spotify Bad Bunny Gentrificado">
+                        <h4>Bad Bunny Gentrificado</h4>
+                    </div>
+                    <div class="face back">
+                        <h4>Bad Bunny Gentrificado</h4>
+                        <p>¿Existe la gentrificacion dentro de la música? El conejo malo ha sido parte de una evolución dentro de la cultura del reggaeton. Sus escuchas, una vez marginados reclaman ahora su lugar. Escucha los matices culturales y sociales detrás del cambio de la percepción del reggaeton GENTRIFICARON</p>
+                    <div class="link">
+                            <a href="https://open.spotify.com/episode/7x2DqLNI1n5zWKTdgHAkNh" target="_blank"><ion-icon name="mic-circle-outline"></ion-icon></a>
+                    </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="card_work">
+                    <div class="face front">
+                        <img src="./assets/imagenes/imagenes cards/Cafetería en la roma (1).jpg" alt="Podcast Cafeteria la Roma">
+                        <h4>Cafeteria la Roma</h4>
+                    </div>
+                    <div class="face back">
+                        <h4>Cafeteria la Roma</h4>
+                        <p>Descubre las voces silenciadas detrás de la gentrificación siguiendo los desafíos de una cafetería que se ve afectada por la oleada de extranjeros tras la crisis de Covid-19.</p>
+                    <div class="link">
+                            <a href="https://open.spotify.com/episode/3YG6dHfHJRhMpd3GwTapW3" target="_blank"><ion-icon name="mic-circle-outline"></ion-icon></ion-icon></a>
+                    </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" class="card_work">
+                    <div class="face front">
+                        <img src="./assets/imagenes/imagenes cards/Gourmetización.jpg" alt="Podcast Gumertización">
+                        <h4>Gumertización en la CDMX</h4>
+                    </div>
+                    <div class="face back">
+                        <h4>Gumertización en la CDMX</h4>
+                        <p>Este podcast te lleva desde los apetitos gourmet de la Condesa, donde panes con nombres creativos son la norma, hasta la Colonia Escandón, donde la panadería tradicional se erige como un faro de autenticidad en medio del ajetreo urbano.</p>
+                    <div class="link">
+                            <a href="https://open.spotify.com/episode/3lStayFzSrxnkYrokZMKbw" target="_blank"><ion-icon name="mic-circle-outline"></ion-icon></ion-icon></a>
+                    </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down-right" class="card_work">
+                    <div class="face front">
+                        <img src="./assets/imagenes/imagenes cards/Vecindad 10 (1).jpg" alt="Podcast Vecindad">
+                        <h4>Podcast Vecindad</h4>
+                    </div>
+                    <div class="face back">
+                        <h4>Podcast Vecindad</h4>
+                        <p>Descubre los altibajos del desalojo de una familia en esta emotiva narrativa de resistencia y resiliencia vecinal.</p>
+                    <div class="link">
+                            <a href="https://open.spotify.com/episode/0APvw8MUwXO9P4M6zM1pio" target="_blank"><ion-icon name="mic-circle-outline"></ion-icon></ion-icon></a>
+                    </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down-left" class="card_work">
+                    <div class="face front">
+                        <img src="./assets/imagenes/imagenes cards/Santa María.jpg" alt="Podcast Santa María la Ribera">
+                        <h4>Podcast Santa María la Ribera</h4>
+                    </div>
+                    <div class="face back">
+                        <h4>Podcast Santa María la Ribera</h4>
+                        <p>Un relato de callejones y cambios: Santa María la Rivera en carne viva, enfrentando la gentrificación que sacudió sus raíces. Este podcast te hace parte de la crónica en cada episodio. </p>
+                    <div class="link">
+                            <a href=" https://open.spotify.com/episode/5MDvvraIRvBI1Dm0rw5skJ" target="_blank"><ion-icon name="mic-circle-outline"></ion-icon></ion-icon></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 GENTRY</p>
+                <p>Autores: Brayan Gayosso, Damaris Bernal, Saúl Herández, Daniel Flores, Diego Barrón</p>
+            </div>
+            <div class="social-button">
+                <a id="FB"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a id="IG"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a id="TK"><ion-icon name="logo-tiktok"></ion-icon></a>
+            </div>
+        </footer>
+        
+    
+
+    
+
+
+       
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({duration:1000});
+          </script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   		crossorigin=""></script> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <script src="./assets/JavaScript/barra-nav/nav.js"></script>
+    <script src="./assets/JavaScript/opiniones/opinionesAudio.js"></script>
+    <script src="./assets/JavaScript/Galeria/galeria.js"></script>
+    <script src="./assets/JavaScript/barra-nav/nav.js"></script>
+    <script src="./assets/JavaScript/funcionalidad mapa/mapa.js"></script>
+    <script src="./assets/JavaScript/funcionalidad Spotify/spotify.js"></script>
+    <script src="./assets/JavaScript/funcionalidad video reportaje/trailer.js"></script>
+</body>
+</html>

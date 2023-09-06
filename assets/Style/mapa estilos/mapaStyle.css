@@ -1,0 +1,119 @@
+.contenedor-mapa{
+    margin-left: 250px;
+    transition: margin-left 0.5s ease;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    position: relative; /* Agregamos posición relativa para aplicar la sombra */
+    z-index: 1; /* Aseguramos que la sombra esté por debajo de otros elementos */
+    box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.5); /* Sombra dorada 3D */
+    border-radius: 20px; 
+    background-color: #DFDFDF;
+    
+}
+
+.contenedor-mapa.min-mapa{
+    margin-left: 80px;
+}
+
+.contenedor-lista{
+    padding: 40px;
+
+}
+
+.contenedor-mapa select{
+    background-color:#000;
+    color:#fff;
+    transition: background-color 0.3s ease-in-out; /* Efecto de color al pasar el mouse */
+    max-width: 300px;
+}
+
+.contenedor-mapa select:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color:#000;
+}
+
+
+.contenedor-mapa h2 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+#select-location {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid none;
+    border-radius: 10px;
+}
+
+#map {
+    width: 100%;
+    height: calc(100vh - 60px);
+    border: 2px solid none;
+    border-radius: 5px;
+    z-index: 1;
+    border-radius: 20px;
+    cursor: grab;
+}
+
+.contenedor-mapa a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-mapa{
+    display: flex;
+    background-color: #000; /* Color de fondo dorado */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 60px;
+    transition: background-color 0.3s ease-in-out; /* Efecto de color al pasar el mouse */
+
+}
+
+.boton-mapa ion-icon{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+
+
+.boton-mapa:hover {
+    background-color: gold; 
+    color: #000; 
+    transform: scale(1.05); 
+    animation: pulse 2s infinite; 
+}
+
+
+
+@media (max-width: 760px){
+    .contenedor-mapa{
+        margin: 0px;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    #map { 
+    }
+    .contenedor-mapa h2 {
+        font-size: 1.3rem; 
+        padding: 20px 10px; 
+    }
+    
+    .contenedor-mapa.min-mapa{
+        margin-left: 0;
+    }
+}
+
+

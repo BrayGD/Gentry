@@ -1,0 +1,126 @@
+.contenedor-videoReportaje{
+    margin-left: 250px;
+    transition: margin-left 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; 
+    z-index: 1; /* Aseguramos que la sombra esté por debajo de otros elementos */
+    box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.5); /* Sombra dorada 3D */
+}
+
+.contenedor-videoReportaje.min-videoReportaje{
+    margin-left: 80px;
+}
+
+.videoReportaje {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0,0,0,.50) 100%), url(./portadaVideoReportaje.JPG);
+	background-position: center center;
+	background-size: cover;
+
+	display: flex;
+	align-items: end;
+    padding: 40px;
+}
+
+.videoReportaje .contenedor-elementos {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+    padding: 20px;
+}
+
+.videoReportaje .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+	font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.videoReportaje .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+	font-family: 'GFS Didot', serif;
+}
+
+.videoReportaje  .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+    margin-top: 30px;
+}
+
+.videoReportaje .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.videoReportaje .boton ion-icon {
+	margin-right: 1.25em;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 600px){
+    .contenedor-videoReportaje{
+        margin: 0px;
+		border-radius: none;
+        box-shadow: none;
+    }
+    .contenedor-videoReportaje.min-videoReportaje{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+	.videoReportaje {
+		font-size: 14px;
+	}
+
+	.videoReportaje .descripcion {
+		max-width: 100%;
+	}
+}

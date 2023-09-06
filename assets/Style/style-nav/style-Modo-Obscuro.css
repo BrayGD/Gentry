@@ -1,0 +1,61 @@
+.contenedor_nav .modo-obscuro{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_nav .modo-obscuro .info{
+    overflow: hidden;
+    width: 150px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    color: var(--color-texto-menu);
+}
+
+.contenedor_nav .modo-obscuro ion-icon{
+    width: 50px;
+    font-size: 20px;
+}
+
+/*----------Estilo Switch-------*/
+.contenedor_nav .modo-obscuro .switch{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    height: 45px;
+
+}
+
+.contenedor_nav .modo-obscuro .base{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    background-color: var(--color-switch-base);
+    border-radius: 60px; 
+}
+
+.contenedor_nav .modo-obscuro .circulo{
+    position: absolute;
+    width: 18px;
+    height: 90%;
+    background-color: var(--color-switch-circulo);
+    border-radius: 50%;
+    left: 1px;
+    transition: left 0.5s ease;
+}
+
+.contenedor_nav .modo-obscuro .circulo.prendido{
+    left: 15px;
+}
+
+@media (max-height:660px ){
+    .contenedor_nav .modo-obscuro{
+        margin-bottom: 50px;
+    }
+}

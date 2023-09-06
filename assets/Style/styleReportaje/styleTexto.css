@@ -1,0 +1,118 @@
+.contenedor-reportaje{
+    margin-left: 250px;
+    padding: 40px;
+    display: flex;
+    transition: margin-left 0.5s ease;
+    background-color: #DFDFDF;
+    z-index: 1; 
+    border-radius: 20px; 
+    position: relative; /* Agregamos posición relativa para aplicar la sombra */
+    z-index: 1; /* Aseguramos que la sombra esté por debajo de otros elementos */
+    box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.5); /* Sombra dorada 3D */
+}
+.card {
+    display: flex;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5); /* Efecto de sombra dorada */
+    margin: 20px;
+    max-width: 100%; /* Se ajustará al contenedor padre */
+    transition: box-shadow 0.3s ease-in-out; /* Efecto de sombra al pasar el mouse */
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.8); /* Cambio de sombra al pasar el mouse */
+}
+
+.card img {
+    max-width: 400px; /* Tamaño máximo de la imagen */
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    color: #000;
+}
+
+h2 {
+    font-size: 33px;
+    margin: 0;
+    font-family: 'Mochiy Pop One', sans-serif;}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'GFS Didot', serif;
+}
+
+.read-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Color de fondo dorado */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out; /* Efecto de color al pasar el mouse */
+}
+
+.read-more-button:hover {
+    background-color: gold; 
+    color: #000; 
+    transform: scale(1.05); 
+    animation: pulse 2s infinite;r al pasar el mouse */
+}
+
+
+.contenedor-reportaje.min-reportajeText{
+    margin-left: 80px;
+}
+
+
+
+ /*Estilos textto*/
+
+ 
+ @media  (max-width: 768px){
+    .contenedor-reportaje{
+        margin-left: 0;
+    }
+    .card {
+        display: flex;
+        border: 1px solid #ddd;
+        box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5); /* Efecto de sombra dorada */
+        margin: 20px;
+        max-width: 100%; /* Se ajustará al contenedor padre */
+        transition: box-shadow 0.3s ease-in-out; 
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .card img {
+        max-width: 100%;
+    }
+    p {
+        font-size: 16px;
+    }
+    .card-content {
+        padding: 20px;
+    }
+    .card-content h2{
+        font-size: 20px;
+    }
+
+    .contenedor-reportaje.min-reportajeText{
+        margin-left: 0;
+        
+    }
+}
+
+

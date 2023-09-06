@@ -1,0 +1,77 @@
+    footer {
+        margin-left: 250px;
+        transition: margin-left 0.5s ease;
+        overflow: hidden;
+        background-color: #000; 
+        color: #fff; 
+        text-align: center;
+        padding: 10px 0; 
+    }
+    
+    footer.min-footer{
+        margin-left: 80px;
+    }
+
+    .footer-content {
+        max-width: 960px; 
+        margin: 0 auto; 
+    }
+    
+    .footer-content p {
+        margin: 5px 0; 
+    }
+
+    .social-button {
+        display: flex;
+        justify-content: center; /* Centrar los iconos horizontalmente */
+        margin-top: 40px; /* Agregar margen superior */
+    }
+    
+    .social-button a {
+        text-decoration: none; /* Eliminar subrayado del enlace */
+        color: white; /* Color inicial de los íconos */
+    
+        margin: 0 10px; /* Separación horizontal entre los iconos */
+        font-size: 32px; /* Tamaño de los iconos */
+        transition: color 0.3s; /* Transición suave para el cambio de color */
+    }
+    
+    /* Estilos para los iconos específicos */
+    #FB ion-icon {
+        color: white; /* Color inicial de Facebook */
+    }
+    
+    #IG ion-icon {
+        color: white; /* Color inicial de Instagram */
+    }
+    
+    #TK ion-icon {
+        color: white; /* Color inicial de TikTok */
+    }
+    
+    /* Estilos para el efecto hover */
+    #FB:hover ion-icon {
+        color: blue; /* Cambiar a azul al pasar el mouse sobre Facebook */
+    }
+    
+    #IG:hover ion-icon {
+        color: rgb(255, 106, 131); /* Cambiar a rosa al pasar el mouse sobre Instagram */
+    }
+    
+    #TK:hover ion-icon {
+        color: magenta; /* Cambiar a magenta al pasar el mouse sobre TikTok */
+    }
+   
+
+    
+    @media (max-width: 600px){
+        footer{
+            margin: 0px;
+            margin-top: 30px;
+        }
+    
+        footer.min-footer{
+            margin-left: 0;
+        }
+    }
+    

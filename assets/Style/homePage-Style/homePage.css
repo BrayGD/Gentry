@@ -1,0 +1,31 @@
+.contenedor-homePage{
+    margin-left: 250px;
+    transition: margin-left 0.5s ease;
+    position: relative;
+}
+
+.contenedor-homePage::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-homePage.min-homePage{
+    margin-left: 80px;
+}
+
+
+
+
+@media (max-width: 600px){
+    .contenedor-homePage{
+        margin: 0px;
+    }
+    .contenedor-homePage.min-homePage{
+        margin-left: 0;
+    }
+}

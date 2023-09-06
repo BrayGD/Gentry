@@ -1,0 +1,64 @@
+:root{
+    --color-barra-lateral: #704d00;
+
+    --color-menu-burger: #fffffff8;
+    
+    --color-texto: #000;
+    --color-texto-menu: #fafafa;
+
+    --color-menu-hover: #996a24;
+    --color-menu-hover-texto: rgb(224, 224, 224);
+
+    --color-boton: #000;
+    --color-boton-texto: #fff;
+
+    --color-linea: rgb(218, 218, 218);
+
+    --color-switch-base: rgb(255, 255, 255);
+    --color-switch-circulo: rgb(209, 159, 20);
+
+    --color-barra-scroll: rgb(204, 198, 198);
+    --color-barra-scroll-hover: rgb(209, 159, 20);
+}
+
+.dark_mode{
+    --color-barra-lateral: #000;
+    
+    --color-texto: #000;
+    --color-texto-menu: #fff;
+
+    --color-menu-hover: #555555;
+    --color-menu-hover-texto: rgb(255, 255, 255);
+
+    --color-boton: #000;
+    --color-boton-texto: #fff;
+
+    --color-linea: rgb(136, 136, 136);
+
+
+    --color-switch-base: rgb(0, 0, 0);
+    --color-switch-circulo: rgb(255, 255, 255);
+
+    --color-barra-scroll: rgb(78, 78, 78);
+    --color-barra-scroll-hover: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    overflow: scroll;
+    z-index: 2000;
+
+
+}
+
+body.resize-body{
+    overflow: hidden;
+}
+
+
