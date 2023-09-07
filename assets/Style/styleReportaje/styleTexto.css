@@ -84,6 +84,8 @@ p {
  @media  (max-width: 768px){
     .contenedor-reportaje{
         margin-left: 0;
+        border-radius: none;
+        box-shadow: none;
     }
     .card {
         display: flex;
@@ -111,6 +113,8 @@ p {
 
     .contenedor-reportaje.min-reportajeText{
         margin-left: 0;
+        width: 100%;
+        height: auto;
         
     }
 }

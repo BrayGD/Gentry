@@ -61,4 +61,7 @@ body.resize-body{
     overflow: hidden;
 }
 
+.mini-barra-lateral body.minimizada {
+    margin-left: 80px; 
+}
 

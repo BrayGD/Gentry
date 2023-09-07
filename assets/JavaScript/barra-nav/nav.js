@@ -34,6 +34,7 @@ logo.addEventListener("click", () => {
 
 menu.addEventListener("click", () => {
     barraLateral.classList.toggle("max-barra-lateral");
+    document.body.classList.toggle("minimizada");
     if (barraLateral.classList.contains ("max-barra-lateral")){
         menu.children[0].style.display = "none";
         menu.children[1].style.display = "block"

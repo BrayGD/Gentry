@@ -72,6 +72,8 @@
     
         footer.min-footer{
             margin-left: 0;
+            width: 100%;
+            height: auto;
         }
     }
     

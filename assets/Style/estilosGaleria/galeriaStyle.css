@@ -121,6 +121,8 @@
     }
     .galeria.min-galeria{
         margin-left: 0;
+        width: 100%;
+        height: auto;
     }
 }
 

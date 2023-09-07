@@ -113,6 +113,8 @@
     
     .contenedor-mapa.min-mapa{
         margin-left: 0;
+        width: 100%;
+        height: auto;
     }
 }
 
